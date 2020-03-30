@@ -1,0 +1,26 @@
+{
+  "name": "chess-eco-parser",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "jsnext:main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "build-start": "npm run build && npm run start"
+  },
+  "author": "moomoomamoo",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^13.9.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  }
+}
